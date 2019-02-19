@@ -1,10 +1,10 @@
 # plaeryvs-dockerfile-workspace
 Hello thanks in advance for reviewing my issue regarding a ue4 dedicated steam server inside a docker container (linux host).  I really appreciate any guidance, or suggested tests/ approaches as I am almost out of ideas!
 
-In summary here is my issue:
+### Summary of the issue
 I have a UE4 dedicated server for my game PlayerVs.  I have 2 dedicated servers, windows and linux.  When running the windows or linux servers on windows / ubuntu 18.04 vm's on azure I see my servers in steam.  However, when I put the linux server inside a docker container, I do not see it in steam.
 
-How I test steam visibility:
+### How I test steam visibility
 1 open up the Steam 
 2 go to Servers 
 3 I use the Internet tab, filtering on my game name
