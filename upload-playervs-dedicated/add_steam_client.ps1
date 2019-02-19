@@ -1,0 +1,2 @@
+Copy-Item A:\UE4\PlayerVsTools\upload-playervs-dedicated\linux64-binaries\* -Destination A:\UE4\projects\PlayerVs\Saved\StagedBuilds\LinuxServer\PlayerVs\Binaries\Linux
+Copy-Item A:\UE4\PlayerVsTools\upload-playervs-dedicated\windows64-binaries\* -Destination A:\UE4\projects\PlayerVs\Saved\StagedBuilds\WindowsServer\PlayerVs\Binaries\Win64
