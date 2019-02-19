@@ -2,10 +2,13 @@
 
 var PORT = 33333;
 
-//172.17.0.1
-//https://forums.docker.com/t/udp-port-mapping-sending-data-from-container-to-host/35762/5
-//var HOST = '172.17.0.2';
+// // INCORRECT, when hosted inside a container, listening to 127.0.0.1 is like listening to yourself, nothing is ever captured
 //var HOST = '127.0.0.1';
+
+// Listen to only the dynamically assigned IP of this container (Assumes the docker engine will assign this ip address to this container)
+//var HOST = '172.17.0.2';
+
+// Listen to all IP's
 var HOST = '0.0.0.0';
 
 var dgram = require('dgram');

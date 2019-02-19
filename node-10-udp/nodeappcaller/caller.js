@@ -1,12 +1,14 @@
 'use strict';
 
 var PORT = 33333;
+
+// At one point this was the IP address of a container running the nodeapp image
 //var HOST = '20.37.137.149';
+
+// Currently, 127.0.0.1 -- for when nodeapp container is running on my machine
 var HOST = '127.0.0.1';
-//var HOST = '0.0.0.0'
 
 var dgram = require('dgram');
-
 
 var client = dgram.createSocket('udp4');
 

@@ -8,4 +8,4 @@ RUN /opt/steam/steamcmd.sh \
 
 EXPOSE 27015/udp 7777/udp
 
-ENTRYPOINT /var/lib/steam/playervs-dedicated/PlayerVsServer.sh -log -server LOG=ServerLogs.txt
+ENTRYPOINT /var/lib/steam/playervs-dedicated/PlayerVsServer.sh -log
