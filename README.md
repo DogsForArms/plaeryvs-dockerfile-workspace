@@ -7,9 +7,9 @@ I have a UE4 dedicated server for my game PlayerVs.  I have 2 dedicated servers,
 ### This project setup:
 Note:  All docker folders have build.ps1 and run.ps1 and upload.ps1 scripts, so you can see exactly how I run these images.  Also saves me a little time when making new folders.  Each build/run/upload will tag the image/container name as the folder directory...
 
+- playervs-dir-ubuntuvm-1804: installs dedicated server with COPY (ubuntu 18.04 base) This is the image I used when doing the netstat traces from inside the container (see Q4), although I think the netstat print would be the same from any other "playervs" image.
 - playervs-cmd: installs dedicated server with steamcmd (wmark/steambase)
 - playervs-dir-centos-7: installs dedicated server with COPY (centos7 base)
-- playervs-dir-ubuntuvm-1804: installs dedicated server with COPY (ubuntu 18.04 base)
 - node-10-udp: node test env where I create a udp server (nodeapp) within a container to ping from another node udp app (nodeappcaller) to prove that udp traffic is OK in general.
 - upload-playervs-dedicated: helper scripts to inject steamclient dependencies in Staged dedicated server files, win10 and linux.  please ignore.
 
