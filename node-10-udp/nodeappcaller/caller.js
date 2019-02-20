@@ -19,4 +19,4 @@ setInterval( function () {
         if (err) throw err;
         console.log('UDP message sent to ' + HOST + ':' + PORT + ' message: ' + messageStr);
     });
-}, 1000)
+}, 0)
