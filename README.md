@@ -5,9 +5,9 @@ Hello thanks in advance for reviewing my issue regarding a ue4 dedicated steam s
 I have a UE4 dedicated server for my game PlayerVs.  I have 2 dedicated servers, windows and linux.  When running the windows or linux servers on windows / ubuntu 18.04 vm's on azure I see my servers in steam.  However, when I put the linux server inside a docker container, I do not see it in steam.
 
 ### This project setup:
-- playervs-cmd: installs dedicated server with steamcmd (wmark/steambase)
-- playervs-dir-centos-7: installs dedicated server with COPY (centos7 base)
-- playervs-dir-ubuntuvm-1804: installs dedicated server with COPY (ubuntu 18.04 base)
+- playervs-wmark-steamcmd: installs dedicated server with steamcmd (wmark/steambase, steamcmd +app_update 1023620)
+- playervs-dir-centos-7: installs dedicated server with COPY (centos7 base, COPY --chown=steam LinuxServer)
+- playervs-dir-ubuntuvm-1804: installs dedicated server with COPY (ubuntu 18.04 base, same apt-installs I do on VM +netstat, COPY --chown=steam LinuxServer)
 - node-10-udp: node test env where I create a udp server (nodeapp) within a container to ping from another node udp app (nodeappcaller) to prove that udp traffic is OK in general.
 - upload-playervs-dedicated: helper scripts to inject steamclient dependencies in Staged dedicated server files, win10 and linux.  please ignore.
 
